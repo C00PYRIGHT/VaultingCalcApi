@@ -30,7 +30,7 @@ public class CountController {
     }
     @PostMapping("/horsecount")
     public ResponseEntity<HorseResponse> HorseCountEndpoint(@RequestBody HorseInput input) {
-        return ResponseEntity.ok( scoreCountService.HorseScoreCalculate(input))w;
+        return ResponseEntity.ok( scoreCountService.HorseScoreCalculate(input));
     }
 
 }
